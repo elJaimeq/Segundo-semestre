@@ -1,0 +1,16 @@
+﻿<Window x:Class="Contador.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Contador"
+        mc:Ignorable="d"
+        Title="Ejercicio_XD" Height="450" Width="527">
+    <Grid>
+        <ListBox x:Name="listaarreglo" HorizontalAlignment="Left" Height="378" Margin="19,24,0,0" VerticalAlignment="Top" Width="188" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="listaarreglo_SelectionChanged"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="36" Margin="244,262,0,0" VerticalAlignment="Top" Width="107" Click="button_Click"/>
+        <Button x:Name="lista" Content="Button" HorizontalAlignment="Left" Height="36" Margin="383,262,0,0" VerticalAlignment="Top" Width="109" Click="lista_Click" Focusable="False"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="32" Margin="244,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
+
+    </Grid>
+</Window>
